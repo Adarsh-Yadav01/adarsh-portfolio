@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* Clean white background */
+    --foreground: 240 10% 3.9%; /* Darker, modern text color */
+    --primary: 250 65% 55%; /* Vibrant indigo for primary actions */
+    --primary-foreground: 0 0% 100%; /* White for contrast */
+    --secondary: 220 70% 90%; /* Soft blue-gray for secondary elements */
+    --secondary-foreground: 240 10% 3.9%; /* Dark text for readability */
+    --muted: 220 20% 95%; /* Subtle background for muted sections */
+    --muted-foreground: 240 5% 35%; /* Softer gray for secondary text */
+    --accent: 260 60% 60%; /* Complementary purple accent */
+    --accent-foreground: 0 0% 100%; /* White for accent contrast */
+    --destructive: 0 85% 60%; /* Bold red for destructive actions */
+    --destructive-foreground: 0 0% 100%; /* White for contrast */
+    --border: 220 15% 85%; /* Light gray border for subtle separation */
+    --input: 220 15% 85%; /* Consistent input border */
+    --ring: 250 65% 55%; /* Matching primary for focus rings */
+    --radius: 0.75rem; /* Slightly larger radius for modern feel */
+    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); /* Subtle shadow */
+    --transition: all 0.2s ease-in-out; /* Smooth transitions */
+  }
+
+  .dark {
+    --background: 240 10% 3.9%; /* Deep dark background */
+    --foreground: 0 0% 98%; /* Near-white text for contrast */
+    --primary: 250 65% 65%; /* Lighter indigo for dark mode */
+    --primary-foreground: 240 10% 3.9%; /* Dark text for readability */
+    --secondary: 220 15% 20%; /* Darker blue-gray for secondary */
+    --secondary-foreground: 0 0% 98%; /* White for contrast */
+    --muted: 220 15% 15%; /* Darker muted background */
+    --muted-foreground: 220 10% 60%; /* Lighter gray for muted text */
+    --accent: 260 60% 70%; /* Brighter purple accent */
+    --accent-foreground: 0 0% 98%; /* White for contrast */
+    --destructive: 0 70% 50%; /* Softer red for dark mode */
+    --destructive-foreground: 0 0% 98%; /* White for contrast */
+    --border: 220 15% 20%; /* Darker border */
+    --input: 220 15% 20%; /* Consistent input border */
+    --ring: 250 65% 65%; /* Matching primary for focus rings */
+    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.2), 0 2px 4px -2px rgb(0 0 0 / 0.2); /* Stronger shadow for depth */
+  }
+}
+
+* {
+  border-color: hsl(var(--border));
+  transition: var(--transition);
+}
+
+body {
+  color: hsl(var(--foreground));
+  background: hsl(var(--background));
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button, input, textarea, select {
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px hsl(var(--ring) / 0.3);
+}
+
+::selection {
+  background: hsl(var(--primary) / 0.2);
+  color: hsl(var(--primary-foreground));
+}
