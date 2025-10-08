@@ -2,202 +2,176 @@
 import { useState, useEffect } from 'react'
 import { 
   Code2, 
-  Palette, 
+  Layers, 
   Database, 
-  Wrench, 
-  Smartphone,
-  Layout,
-  Server,
   Cloud,
-  GitBranch,
-  Terminal,
-  Package,
-  Cpu
+  ArrowUpRight,
+  Zap
 } from 'lucide-react'
 
-// Icon mapping for different categories
-const categoryIcons = {
-  'Frontend': Layout,
-  'Backend': Server,
-  'Database': Database,
-  'DevOps': Cloud,
-  'Mobile': Smartphone,
-  'Design': Palette,
-  'Tools': Wrench,
-  'Languages': Code2,
-  'Version Control': GitBranch,
-  'Framework': Package,
-  'Testing': Terminal,
-  'Other': Cpu
-}
-
-// Sample skill data with proficiency
-const skillCategories = [
+const skillHighlights = [
   {
-    name: 'Frontend',
-    skills: [
-      { name: 'React', proficiency: 95 },
-      { name: 'Next.js', proficiency: 90 },
-      { name: 'TypeScript', proficiency: 88 },
-      { name: 'Tailwind CSS', proficiency: 92 },
-      { name: 'Vue.js', proficiency: 75 },
-      { name: 'HTML/CSS', proficiency: 98 }
-    ]
+    category: 'Frontend Development',
+    icon: Layers,
+    color: 'from-blue-500 to-cyan-500',
+    primarySkills: ['React', 'Next.js', 'TypeScript'],
+    count: 8
   },
   {
-    name: 'Backend',
-    skills: [
-      { name: 'Node.js', proficiency: 90 },
-      { name: 'Express', proficiency: 88 },
-      { name: 'Python', proficiency: 82 },
-      { name: 'REST APIs', proficiency: 93 },
-      { name: 'GraphQL', proficiency: 78 }
-    ]
+    category: 'Backend Engineering',
+    icon: Code2,
+    color: 'from-purple-500 to-pink-500',
+    primarySkills: ['Node.js', 'Python', 'REST APIs'],
+    count: 6
   },
   {
-    name: 'Database',
-    skills: [
-      { name: 'MongoDB', proficiency: 85 },
-      { name: 'PostgreSQL', proficiency: 80 },
-      { name: 'MySQL', proficiency: 83 },
-      { name: 'Redis', proficiency: 72 },
-      { name: 'Firebase', proficiency: 88 }
-    ]
+    category: 'Database & Storage',
+    icon: Database,
+    color: 'from-orange-500 to-red-500',
+    primarySkills: ['MongoDB', 'PostgreSQL', 'Redis'],
+    count: 7
   },
   {
-    name: 'DevOps',
-    skills: [
-      { name: 'Docker', proficiency: 80 },
-      { name: 'AWS', proficiency: 75 },
-      { name: 'CI/CD', proficiency: 82 },
-      { name: 'Nginx', proficiency: 70 },
-      { name: 'Vercel', proficiency: 90 }
-    ]
+    category: 'Cloud & DevOps',
+    icon: Cloud,
+    color: 'from-green-500 to-emerald-500',
+    primarySkills: ['Docker', 'AWS', 'CI/CD'],
+    count: 5
   }
 ]
 
-function ProficiencyBar({ proficiency, delay }) {
-  const [width, setWidth] = useState(0)
+export default function SkillsOverview() {
+  const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setWidth(proficiency)
-    }, delay)
+    const timer = setTimeout(() => setIsVisible(true), 100)
     return () => clearTimeout(timer)
-  }, [proficiency, delay])
+  }, [])
+
+  const handleExplore = () => {
+    window.location.href = '/skills'
+  }
 
   return (
-    <div className="w-full bg-gray-200 rounded-full h-1.5 overflow-hidden">
-      <div
-        className="h-full bg-gradient-to-r from-blue-500 to-purple-600 rounded-full transition-all duration-1000 ease-out"
-        style={{ width: `${width}%` }}
-      />
-    </div>
-  )
-}
-
-export default function SkillsOverview() {
-  const [hoveredCard, setHoveredCard] = useState(null)
-
-  return (
-    <section className="py-16 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
-      {/* Decorative background elements */}
-      <div className="absolute top-0 left-0 w-72 h-72 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-100 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse"></div>
+    <section className="py-24 bg-gradient-to-b from-white via-gray-50 to-white relative overflow-hidden">
+      {/* Subtle grid background */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-3 tracking-tight">
-            Skills & Technologies
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
+        {/* Section Header */}
+        <div className="max-w-3xl mb-16">
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-50 border border-blue-100 rounded-full text-sm font-medium text-blue-600 mb-6">
+            <Zap size={14} />
+            <span>Technical Expertise</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+            Technology Stack
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Technologies I work with to bring ideas to life
+          <p className="text-lg text-gray-600 leading-relaxed">
+            Specialized in building scalable web applications with modern technologies. 
+            Here's a glimpse of my core competencies.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-          {skillCategories.map((category, idx) => {
-            const IconComponent = categoryIcons[category.name] || Code2
+        {/* Skills Grid */}
+        <div className="grid md:grid-cols-2 gap-6 mb-12">
+          {skillHighlights.map((skill, idx) => {
+            const IconComponent = skill.icon
             
             return (
-              <div 
-                key={category.name} 
-                className="group bg-white rounded-xl p-5 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200 hover:-translate-y-1"
-                style={{ 
-                  animation: `fadeInUp 0.6s ease-out ${idx * 100}ms both`
+              <div
+                key={skill.category}
+                className="group relative bg-white rounded-2xl p-8 border border-gray-200 hover:border-gray-300 transition-all duration-300 hover:shadow-xl"
+                style={{
+                  opacity: isVisible ? 1 : 0,
+                  transform: isVisible ? 'translateY(0)' : 'translateY(20px)',
+                  transition: `all 0.6s ease-out ${idx * 100}ms`
                 }}
-                onMouseEnter={() => setHoveredCard(idx)}
-                onMouseLeave={() => setHoveredCard(null)}
               >
-                {/* Icon */}
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg mb-4 flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-md">
-                  <IconComponent className="text-white" size={24} />
+                {/* Gradient accent */}
+                <div className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r ${skill.color} rounded-t-2xl`}></div>
+                
+                <div className="flex items-start justify-between mb-6">
+                  <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${skill.color} flex items-center justify-center shadow-lg`}>
+                    <IconComponent className="text-white" size={24} />
+                  </div>
+                  <span className="text-sm font-semibold text-gray-400">
+                    {skill.count}+ skills
+                  </span>
                 </div>
-                
-                <h3 className="text-lg font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">
-                  {category.name}
+
+                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                  {skill.category}
                 </h3>
-                
-                <ul className="space-y-3">
-                  {category.skills.slice(0, 4).map((skill, skillIdx) => (
-                    <li 
-                      key={skill.name} 
-                      className="text-gray-600 text-sm"
+
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {skill.primarySkills.map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-3 py-1.5 bg-gray-50 border border-gray-200 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors"
                     >
-                      <div className="flex items-center justify-between mb-1">
-                        <span className="font-medium group-hover:text-gray-900 transition-colors">
-                          {skill.name}
-                        </span>
-                        <span className="text-xs text-gray-400 font-semibold">
-                          {skill.proficiency}%
-                        </span>
-                      </div>
-                      <ProficiencyBar 
-                        proficiency={skill.proficiency} 
-                        delay={hoveredCard === idx ? skillIdx * 100 : idx * 200 + skillIdx * 100}
-                      />
-                    </li>
+                      {tech}
+                    </span>
                   ))}
-                </ul>
-                
-                {category.skills.length > 4 && (
-                  <p className="text-xs text-gray-400 mt-3 font-medium flex items-center gap-1">
-                    <span className="w-1 h-1 bg-gray-400 rounded-full"></span>
-                    {category.skills.length - 4} more skills
-                  </p>
-                )}
+                </div>
+
+                <button
+                  onClick={handleExplore}
+                  className="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors inline-flex items-center gap-1 group-hover:gap-2"
+                >
+                  View all
+                  <ArrowUpRight size={14} className="transition-all" />
+                </button>
               </div>
             )
           })}
         </div>
 
-        <div className="text-center mt-12">
-          <button className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300 group">
-            View All Skills
-            <svg 
-              className="w-5 h-5 group-hover:translate-x-1 transition-transform" 
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24"
+        {/* CTA Section */}
+        <div className="relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-10 md:p-12 overflow-hidden">
+          {/* Decorative elements */}
+          <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+          
+          <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                Explore Full Tech Stack
+              </h3>
+              <p className="text-gray-400 text-lg">
+                Deep dive into all technologies, tools, and frameworks I work with
+              </p>
+            </div>
+            <button
+              onClick={handleExplore}
+              className="shrink-0 px-8 py-4 bg-white text-gray-900 font-semibold rounded-xl hover:bg-gray-100 transition-all duration-300 inline-flex items-center gap-2 shadow-lg hover:shadow-xl hover:scale-105"
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </button>
+              <span>View All Skills</span>
+              <ArrowUpRight size={20} />
+            </button>
+          </div>
+        </div>
+
+        {/* Stats bar */}
+        <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="text-center">
+            <div className="text-3xl font-bold text-gray-900 mb-1">26+</div>
+            <div className="text-sm text-gray-500">Technologies</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl font-bold text-gray-900 mb-1">5+</div>
+            <div className="text-sm text-gray-500">Years Experience</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl font-bold text-gray-900 mb-1">50+</div>
+            <div className="text-sm text-gray-500">Projects Built</div>
+          </div>
+          <div className="text-center">
+            <div className="text-3xl font-bold text-gray-900 mb-1">100%</div>
+            <div className="text-sm text-gray-500">Client Satisfaction</div>
+          </div>
         </div>
       </div>
-
-      <style jsx>{`
-        @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-      `}</style>
     </section>
   )
 }
