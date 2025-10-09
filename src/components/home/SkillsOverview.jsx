@@ -53,18 +53,18 @@ export default function SkillsOverview() {
   }
 
   return (
-    <section className="py-24 bg-gradient-to-b from-white via-gray-50 to-white relative overflow-hidden">
+    <section className="py-16 bg-gradient-to-b from-white via-gray-50 to-white relative overflow-hidden">
       {/* Subtle grid background */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
       
       <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
         {/* Section Header */}
-        <div className="max-w-3xl mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-50 border border-blue-100 rounded-full text-sm font-medium text-blue-600 mb-6">
+        <div className="max-w-3xl mb-12">
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-50 border border-blue-100 rounded-full text-sm font-medium text-blue-600 mb-4">
             <Zap size={14} />
             <span>Technical Expertise</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-3 leading-tight">
             Technology Stack
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
@@ -74,7 +74,7 @@ export default function SkillsOverview() {
         </div>
 
         {/* Skills Grid */}
-        <div className="grid md:grid-cols-2 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 gap-6 mb-10">
           {skillHighlights.map((skill, idx) => {
             const IconComponent = skill.icon
             
@@ -128,7 +128,7 @@ export default function SkillsOverview() {
         </div>
 
         {/* CTA Section */}
-        <div className="relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-10 md:p-12 overflow-hidden">
+        <div className="relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 md:p-10 overflow-hidden">
           {/* Decorative elements */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
@@ -153,7 +153,7 @@ export default function SkillsOverview() {
         </div>
 
         {/* Stats bar */}
-        <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-6">
           <div className="text-center">
             <div className="text-3xl font-bold text-gray-900 mb-1">26+</div>
             <div className="text-sm text-gray-500">Technologies</div>
