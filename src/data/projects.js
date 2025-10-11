@@ -6,6 +6,12 @@ export const projects = [
     shortDescription: "Full-stack e-commerce solution with payment integration",
     description: "A complete e-commerce platform built with Next.js and Node.js featuring user authentication, product management, shopping cart, payment processing with Stripe, and admin dashboard.",
     image: "/images/projects/project1-thumbnail.jpg",
+    images: [  // Add this array for slider
+    "/projects/projects/project1-thumbnail.jpg",
+    "/projects/projects/project1-thumbnail.jpg",
+    "/projects/project1-screenshot3.jpg",
+    "/projects/project1-screenshot4.jpg"
+  ],
     videoUrl: "/videos/projects/ecommerce/admin-panel.mp4",
     gallery: [
       "/images/projects/project1-hero.jpg",
@@ -35,6 +41,12 @@ export const projects = [
     shortDescription: "Collaborative task management with real-time updates",
     description: "A comprehensive task management application with team collaboration features, real-time updates, drag-and-drop interface, and progress tracking.",
     image: "/images/projects/project2-thumbnail.jpg",
+      images: [  // Add this array for slider
+    "/projects/project1-screenshot1.jpg",
+    "/projects/project1-screenshot2.jpg",
+    "/projects/project1-screenshot3.jpg",
+    "/projects/project1-screenshot4.jpg"
+  ],
     gallery: ["/images/projects/project2-hero.jpg"],
     technologies: ["React", "Express.js", "Socket.io", "PostgreSQL"],
     category: "Web App",
@@ -61,7 +73,7 @@ export const projects = [
     description: "A complete e-commerce platform built with Next.js and Node.js featuring user authentication, product management, shopping cart, payment processing with Stripe, and admin dashboard.",
     image: "/images/projects/project1-thumbnail.jpg",
     videoUrl: "/videos/projects/ecommerce/admin-panel.mp4",
-    gallery: [
+    images: [
       "/images/projects/project1-hero.jpg",
       "/images/projects/project1-screenshot-1.jpg",
       "/images/projects/project1-thumbnail.jpg",
