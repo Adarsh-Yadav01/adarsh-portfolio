@@ -15,6 +15,8 @@ export const projects = [
     videoUrl: "/videos/projects/ecommerce/admin-panel.mp4",
     gallery: [
       "/images/projects/project1-hero.jpg",
+      "/images/projects/project1-screenshot-1.jpg",
+      "/images/projects/project1-screenshot-1.jpg",
       "/images/projects/project1-screenshot-1.jpg"
     ],
     technologies: ["Next.js", "Node.js", "MongoDB", "Stripe", "Tailwind CSS"],
