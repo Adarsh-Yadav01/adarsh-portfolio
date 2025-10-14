@@ -593,11 +593,30 @@ export default function ProjectDetailClient({ project }) {
   };
 
   // touch handlers for swipe in gallery
+  // const onTouchStart = (e) => {
+  //   setTouchStart(e.targetTouches[0].clientX);
+  //   setTouchEnd(null);
+  // };
+  // const onTouchMove = (e) => setTouchEnd(e.targetTouches[0].clientX);
+  // const onTouchEnd = () => {
+  //   if (!touchStart || !touchEnd) return;
+  //   const distance = touchStart - touchEnd;
+  //   if (distance > minSwipeDistance) {
+  //     next();
+  //   } else if (distance < -minSwipeDistance) {
+  //     prev();
+  //   }
+  // };
+
+  // touch handlers for swipe in gallery
   const onTouchStart = (e) => {
     setTouchStart(e.targetTouches[0].clientX);
     setTouchEnd(null);
   };
-  const onTouchMove = (e) => setTouchEnd(e.targetTouches[0].clientX);
+  const onTouchMove = (e) => {
+    e.preventDefault();
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
   const onTouchEnd = () => {
     if (!touchStart || !touchEnd) return;
     const distance = touchStart - touchEnd;
@@ -605,6 +624,27 @@ export default function ProjectDetailClient({ project }) {
       next();
     } else if (distance < -minSwipeDistance) {
       prev();
+    }
+  };
+
+  // touch handlers for lightbox
+  const [lightboxTouchStart, setLightboxTouchStart] = useState(null);
+  const [lightboxTouchEnd, setLightboxTouchEnd] = useState(null);
+
+  const onLightboxTouchStart = (e) => {
+    setLightboxTouchStart(e.targetTouches[0].clientX);
+    setLightboxTouchEnd(null);
+  };
+  const onLightboxTouchMove = (e) => {
+    setLightboxTouchEnd(e.targetTouches[0].clientX);
+  };
+  const onLightboxTouchEnd = () => {
+    if (!lightboxTouchStart || !lightboxTouchEnd) return;
+    const distance = lightboxTouchStart - lightboxTouchEnd;
+    if (distance > minSwipeDistance) {
+      nextImage();
+    } else if (distance < -minSwipeDistance) {
+      prevImage();
     }
   };
 
