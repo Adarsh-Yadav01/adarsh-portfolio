@@ -254,18 +254,18 @@ export const projects = [
     "liveUrl": "https://finance.marcadeo.in/",
     "githubUrl": "https://github.com/adarshyadav/finance-management-platform",
     "completedDate": "2024-08-10",
-    "challenges": [
-      "Designing role-based dashboards for multiple user types",
-      "Real-time notifications for payouts and lead budgets",
-      "Generating detailed reports for vendors and offers",
-      "Ensuring secure and scalable financial data management"
-    ],
-    "results": [
-      "Streamlined finance management across multiple roles",
-      "Real-time notifications improved operational efficiency",
-      "Comprehensive reporting reduced manual auditing",
-      "High scalability and performance using MERN stack"
-    ]
+  "challenges": [
+    "Automated equal task distribution among employees",
+    "Real-time tracking of FTD, RD1, RD2 performance",
+    "Handling large gaming spend and signup records",
+    "Designing separate dashboards for Admin and Employees"
+  ],
+  "results": [
+    "Automated workforce task allocation",
+    "Improved tracking of gaming signups and revenue",
+    "Centralized data control for admin operations",
+    "Increased productivity with employee dashboards"
+  ]
   },
 
   {
@@ -325,18 +325,18 @@ export const projects = [
     "liveUrl": "https://gaming-tracker-demo.vercel.app",
     "githubUrl": "https://github.com/adarshyadav/gaming-tracking-platform",
     "completedDate": "2024-09-20",
-    "challenges": [
-      "Designing role-based dashboards for multiple user types",
-      "Real-time notifications for payouts and lead budgets",
-      "Generating detailed reports for vendors and offers",
-      "Ensuring secure and scalable financial data management"
-    ],
-    "results": [
-      "Streamlined finance management across multiple roles",
-      "Real-time notifications improved operational efficiency",
-      "Comprehensive reporting reduced manual auditing",
-      "High scalability and performance using MERN stack"
-    ]
+  "challenges": [
+    "Automated equal task distribution among employees",
+    "Real-time tracking of FTD, RD1, RD2 performance",
+    "Handling large gaming spend and signup records",
+    "Designing separate dashboards for Admin and Employees"
+  ],
+  "results": [
+    "Automated workforce task allocation",
+    "Improved tracking of gaming signups and revenue",
+    "Centralized data control for admin operations",
+    "Increased productivity with employee dashboards"
+  ]
   },
 
   {
@@ -360,35 +360,35 @@ export const projects = [
     ],
     "image": "/images/projects/inventory-platform-thumbnail.jpg",
           "images": [
-    "/images/projects/finance_1.png",
-    "/images/projects/finance_2.png",
-    "/images/projects/finance_3.png",
-    "/images/projects/finance_4.png",
-    "/images/projects/finance_5.png",
-    "/images/projects/finance_6.png",
-    "/images/projects/finance_8.png",
-    "/images/projects/finance_9.png",
-    "/images/projects/finance_10.png",
-    "/images/projects/finance_12.png",
-    "/images/projects/finance_13.png",
-    "/images/projects/finance_14.png",
-    "/images/projects/finance_15.png"
+    "/images/projects/inventory_1.png",
+    "/images/projects/inventory_2.png",
+    "/images/projects/inventory_3.png",
+    "/images/projects/inventory_4.png",
+    "/images/projects/inventory_5.png",
+    "/images/projects/inventory_6.png",
+    "/images/projects/inventory_8.png",
+    "/images/projects/inventory_9.png",
+    "/images/projects/inventory_10.png",
+    "/images/projects/inventory_12.png",
+    "/images/projects/inventory_13.png",
+    "/images/projects/inventory_14.png",
+    "/images/projects/inventory_15.png"
   ],
     "videoUrl": "/videos/projects/inventory-platform-demo.mp4",
           "images": [
-    "/images/projects/finance_1.png",
-    "/images/projects/finance_2.png",
-    "/images/projects/finance_3.png",
-    "/images/projects/finance_4.png",
-    "/images/projects/finance_5.png",
-    "/images/projects/finance_6.png",
-    "/images/projects/finance_8.png",
-    "/images/projects/finance_9.png",
-    "/images/projects/finance_10.png",
-    "/images/projects/finance_12.png",
-    "/images/projects/finance_13.png",
-    "/images/projects/finance_14.png",
-    "/images/projects/finance_15.png"
+    "/images/projects/inventory_1.png",
+    "/images/projects/inventory_2.png",
+    "/images/projects/inventory_3.png",
+    "/images/projects/inventory_4.png",
+    "/images/projects/inventory_5.png",
+    "/images/projects/inventory_6.png",
+    "/images/projects/inventory_8.png",
+    "/images/projects/inventory_9.png",
+    "/images/projects/inventory_10.png",
+    "/images/projects/inventory_12.png",
+    "/images/projects/inventory_13.png",
+    "/images/projects/inventory_14.png",
+    "/images/projects/inventory_15.png"
   ],
     "technologies": ["React.js", "Node.js", "Express.js", "MongoDB", "MERN Stack", "Tailwind CSS"],
     "category": "Full Stack",
@@ -396,18 +396,18 @@ export const projects = [
     "liveUrl": "https://inventory.realfam.co.in/auth/sign-in",
     "githubUrl": "https://github.com/adarshyadav/inventory-management-system",
     "completedDate": "2024-10-05",
-    "challenges": [
-      "Designing role-based dashboards for multiple user types",
-      "Real-time notifications for payouts and lead budgets",
-      "Generating detailed reports for vendors and offers",
-      "Ensuring secure and scalable financial data management"
-    ],
-    "results": [
-      "Streamlined finance management across multiple roles",
-      "Real-time notifications improved operational efficiency",
-      "Comprehensive reporting reduced manual auditing",
-      "High scalability and performance using MERN stack"
-    ]
+  "challenges": [
+    "Real-time stock tracking and order status management",
+    "Automated daily order assignment to employees",
+    "Designing multiple dashboards with role-based access",
+    "Tracking delivered vs pending inventory efficiently"
+  ],
+  "results": [
+    "Reduced manual stock tracking by 80%",
+    "Automated work allocation for employees",
+    "Enhanced accuracy in order and stock reporting",
+    "Achieved scalable inventory analytics with dashboards"
+  ]
   },
 
   {
@@ -467,18 +467,18 @@ export const projects = [
     "liveUrl": "https://automation-platform-demo.vercel.app",
     "githubUrl": "https://github.com/adarshyadav/social-automation-platform",
     "completedDate": "In Progress",
-    "challenges": [
-      "Designing role-based dashboards for multiple user types",
-      "Real-time notifications for payouts and lead budgets",
-      "Generating detailed reports for vendors and offers",
-      "Ensuring secure and scalable financial data management"
-    ],
-    "results": [
-      "Streamlined finance management across multiple roles",
-      "Real-time notifications improved operational efficiency",
-      "Comprehensive reporting reduced manual auditing",
-      "High scalability and performance using MERN stack"
-    ]
+  "challenges": [
+    "Integrating Meta APIs for DM and comment automation",
+    "Building keyword-triggered chatbot workflows",
+    "Handling real-time webhook responses",
+    "Meeting Meta's policy and approval requirements"
+  ],
+  "results": [
+    "Instagram automation fully operational",
+    "Automated DM reply and comment engagement",
+    "WhatsApp automation backend ready",
+    "High potential for SaaS product deployment"
+  ]
   }
 ];
 
