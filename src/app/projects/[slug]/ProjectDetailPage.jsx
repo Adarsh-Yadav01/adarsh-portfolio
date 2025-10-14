@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useState, useEffect, useCallback } from 'react';
 
 export default function ProjectDetailClient({ project }) {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);3
   const [isPreviewing, setIsPreviewing] = useState(false);
   const [previewImage, setPreviewImage] = useState(null);
   const [hoveredIndex, setHoveredIndex] = useState(null);
