@@ -216,7 +216,7 @@ export const projects = [
       "Multi-currency financial support",
       "SaaS subscription model integration"
     ],
-    "image": "/images/projects/finance-platform-thumbnail.jpg",
+    "image": "/images/projects/finance_1.png",
       "images": [
     "/images/projects/finance_1.png",
     "/images/projects/finance_2.png",
@@ -429,7 +429,7 @@ export const projects = [
       "Facebook & Telegram integration",
       "Full SaaS rollout with subscriptions"
     ],
-    "image": "/images/projects/social-automation-thumbnail.jpg",
+    "image": "/images/projects/inventory_1.png",
           "images": [
     "/images/projects/finance_1.png",
     "/images/projects/finance_2.png",
@@ -481,7 +481,3 @@ export const projects = [
   ]
   }
 ];
-
-
-
-
