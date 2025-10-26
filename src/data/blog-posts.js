@@ -55,7 +55,7 @@ export const blogPosts = [
       <h2>Lessons Learned</h2>
       <p>Building role-based systems requires careful planning of permissions from day one. The aggregation pipeline approach for reporting proved much more efficient than calculating reports in application code.</p>
     `,
-    coverImage: "/images/blog/finance-dashboard.jpg",
+    coverImage: "/images/blog/admin-dashboard.png",
     author: "Adarsh Yadav",
     publishedDate: "2024-08-15",
     readTime: "12 min read",
@@ -127,7 +127,7 @@ export const blogPosts = [
       <h2>Key Takeaways</h2>
       <p>Working with Meta APIs teaches patience—the approval process is thorough but necessary. Building a reliable webhook system requires careful error handling and retry logic. Always design for scale from the start.</p>
     `,
-    coverImage: "/images/blog/social-automation.jpg",
+    coverImage: "/images/blog/insta-automation.png",
     author: "Adarsh Yadav",
     publishedDate: "2024-09-25",
     readTime: "15 min read",
@@ -1231,7 +1231,7 @@ const testWebhook = async () => {
       <h2>Conclusion</h2>
       <p>Meta's webhook system is powerful but requires careful implementation. Focus on security, error handling, and scalability from day one. Test thoroughly before going live, and monitor closely after deployment.</p>
     `,
-    coverImage: "/images/blog/meta-webhooks.jpg",
+    coverImage: "/images/blog/webhook.jpg",
     author: "Adarsh Yadav",
     publishedDate: "2024-09-30",
     readTime: "14 min read",
