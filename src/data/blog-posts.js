@@ -186,7 +186,7 @@ export const blogPosts = [
       <h2>Lessons Learned</h2>
       <p>Automation isn't just about replacing manual work—it's about optimizing entire workflows. The key was making the algorithm transparent so analysts understood and trusted the assignments.</p>
     `,
-    coverImage: "/images/blog/gaming-tracker.jpg",
+    coverImage: "/images/blog/plan_distribution.png",
     author: "Adarsh Yadav",
     publishedDate: "2024-09-28",
     readTime: "10 min read",
@@ -266,7 +266,7 @@ export const blogPosts = [
       <h2>Lessons Learned</h2>
       <p>Real-time systems need careful consideration of data consistency. We used optimistic locking to prevent race conditions. The key to adoption was making the interface intuitive for warehouse staff who weren't tech-savvy.</p>
     `,
-    coverImage: "/images/blog/inventory-system.jpg",
+    coverImage: "/images/blog/inventory.png",
     author: "Adarsh Yadav",
     publishedDate: "2024-10-10",
     readTime: "11 min read",
@@ -402,7 +402,7 @@ export const blogPosts = [
       <h2>Conclusion</h2>
       <p>RBAC is essential for any multi-user application. The key is balancing security with user experience. Start simple and add complexity as needed.</p>
     `,
-    coverImage: "/images/blog/rbac-auth.jpg",
+    coverImage: "/images/blog/role based authentication.jpg",
     author: "Adarsh Yadav",
     publishedDate: "2024-08-20",
     readTime: "9 min read",
@@ -580,7 +580,7 @@ redisSubscriber.on('message', (channel, message) => {
       <h2>Conclusion</h2>
       <p>SSE is an underutilized technology perfect for one-way real-time communication. It's simpler to implement, requires less infrastructure, and works beautifully for notifications, live updates, and monitoring dashboards.</p>
     `,
-    coverImage: "/images/blog/real-time-notifications.jpg",
+    coverImage: "/images/blog/Real-time-alerts.webp",
     author: "Adarsh Yadav",
     publishedDate: "2024-08-25",
     readTime: "8 min read",
@@ -894,7 +894,7 @@ console.log('Documents examined:', results.executionStats.totalDocsExamined)</co
       <h2>Conclusion</h2>
       <p>MongoDB aggregation pipelines are incredibly powerful for data analysis and reporting. Master them early in your development process, and you'll build more efficient, scalable applications. Always remember: filter early, aggregate wisely, and index strategically.</p>
     `,
-    coverImage: "/images/blog/mongodb-aggregation.jpg",
+    coverImage: "/images/blog/mongodb.png",
     author: "Adarsh Yadav",
     publishedDate: "2024-09-05",
     readTime: "13 min read",
