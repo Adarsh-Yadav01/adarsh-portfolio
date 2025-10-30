@@ -225,23 +225,13 @@ export const projects = [
     "image": "/images/projects/instagram_automation.jpg",
           "images": [
     "/images/projects/instagram_automation.jpg",
-        "/images/projects/inventory_9.png",
-    "/images/projects/inventory_10.png",
-    "/images/projects/inventory_12.png",
-    "/images/projects/inventory_13.png",
-    "/images/projects/inventory_14.png",
-    "/images/projects/inventory_15.png"
+
 
   ],
     "videoUrl": "/videos/projects/social-automation-demo.mp4",
           "images": [
     "/images/projects/instagram_automation.jpg",
-        "/images/projects/inventory_9.png",
-    "/images/projects/inventory_10.png",
-    "/images/projects/inventory_12.png",
-    "/images/projects/inventory_13.png",
-    "/images/projects/inventory_14.png",
-    "/images/projects/inventory_15.png"
+
   ],
     "technologies": ["Next.js", "Node.js", "Express.js", "PostgreSQL", "Meta APIs", "Webhook Automation", "Tailwind CSS"],
     "category": "SaaS / Automation",
