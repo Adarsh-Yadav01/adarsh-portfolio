@@ -225,10 +225,12 @@ export const projects = [
     "image": "/images/projects/growing-instagram.jpg",
           "images": [
     "/images/projects/growing-instagram.jpg",
+    "/images/projects/growing-instagram.jpg",
 
   ],
     "videoUrl": "/videos/projects/social-automation-demo.mp4",
           "images": [
+    "/images/projects/growing-instagram.jpg",
     "/images/projects/growing-instagram.jpg",
   ],
     "technologies": ["Next.js", "Node.js", "Express.js", "PostgreSQL", "Meta APIs", "Webhook Automation", "Tailwind CSS"],
