@@ -172,19 +172,6 @@ export default function AboutPage() {
               </div>
             </div>
             
-            <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-md">
-              <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
-                <div className="w-2 h-2 bg-orange-600 rounded-full"></div>
-                Other
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {['WordPress', 'Shopify', 'SEO', 'UI/UX', 'API Integration', 'Payment Gateways'].map((skill, idx) => (
-                  <span key={idx} className="px-3 py-1.5 bg-gray-100 text-gray-700 rounded-lg text-sm font-medium">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </section>

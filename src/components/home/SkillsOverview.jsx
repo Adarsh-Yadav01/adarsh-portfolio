@@ -182,9 +182,9 @@ export default function SkillsOverview() {
         {/* Compact Stats Bar */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { value: '26+', label: 'Technologies', gradient: 'from-blue-500 to-cyan-500' },
-            { value: '5+', label: 'Years Experience', gradient: 'from-purple-500 to-pink-500' },
-            { value: '50+', label: 'Projects Built', gradient: 'from-orange-500 to-red-500' },
+            { value: '20+', label: 'Technologies', gradient: 'from-blue-500 to-cyan-500' },
+            { value: '2+', label: 'Years Experience', gradient: 'from-purple-500 to-pink-500' },
+            { value: '10+', label: 'Projects Built', gradient: 'from-orange-500 to-red-500' },
             { value: '100%', label: 'Client Satisfaction', gradient: 'from-green-500 to-emerald-500' }
           ].map((stat, idx) => (
             <div 
