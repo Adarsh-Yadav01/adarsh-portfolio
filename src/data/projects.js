@@ -114,7 +114,7 @@ export const projects = [
   ],
     "technologies": ["React.js", "Node.js", "Express.js", "MongoDB", "MERN Stack", "Tailwind CSS"],
     "category": "Full Stack",
-    "featured": false,
+    "featured": true,
     "liveUrl": "https://partners.realfam.co.in/",
     "githubUrl": "https://github.com/adarshyadav/gaming-tracking-platform",
     "completedDate": "2024-09-20",
