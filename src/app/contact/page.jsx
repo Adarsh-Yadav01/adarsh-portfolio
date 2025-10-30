@@ -584,7 +584,7 @@ export default function ContactPage() {
 
 
                 <a
-                  href="https://instagram.com/yourprofile"
+                  href="https://www.instagram.com/adarsh_.yadav._?igsh=OWQyM2NyMG5nOW9w"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 px-4 py-3 bg-white/10 backdrop-blur-sm rounded-lg hover:bg-white/20 transition-all border border-white/20 hover:scale-105 font-medium text-sm"
@@ -595,7 +595,7 @@ export default function ContactPage() {
                   Instagram
                 </a>
                                 <a
-                  href="https://linkedin.com/in/yourprofile"
+                  href="https://www.linkedin.com/in/adarsh-yadav011?utm_source=share_via&utm_content=profile&utm_medium=member_android"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 px-4 py-3 bg-white/10 backdrop-blur-sm rounded-lg hover:bg-white/20 transition-all border border-white/20 hover:scale-105 font-medium text-sm"
