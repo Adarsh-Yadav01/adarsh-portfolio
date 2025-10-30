@@ -90,7 +90,7 @@ export const projects = [
       "Mobile app version",
       "Support for multi-gaming integrations"
     ],
-    "image": "/images/projects/gaming-tracker-thumbnail.jpg",
+    "image": "/images/projects/gaming_1.png",
           "images": [
     "/images/projects/gaming_1.png",
     "/images/projects/gaming_2.png",
