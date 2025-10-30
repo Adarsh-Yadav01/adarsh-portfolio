@@ -1,25 +1,13 @@
 export const socialLinks = [
   {
-    name: 'GitHub',
-    url: 'https://github.com/adarshyadav',
-    icon: 'Github',
-    color: '#333'
-  },
-  {
     name: 'LinkedIn',
-    url: 'https://linkedin.com/in/adarshyadav',
+    url: 'https://www.linkedin.com/in/adarsh-yadav011?utm_source=share_via&utm_content=profile&utm_medium=member_android',
     icon: 'Linkedin',
     color: '#0077B5'
   },
   {
-    name: 'Twitter',
-    url: 'https://twitter.com/adarshyadav',
-    icon: 'Twitter',
-    color: '#1DA1F2'
-  },
-  {
     name: 'Instagram',
-    url: 'https://instagram.com/adarshyadav',
+    url: 'https://www.instagram.com/adarsh_.yadav._?igsh=OWQyM2NyMG5nOW9w',
     icon: 'Instagram',
     color: '#E4405F'
   }
