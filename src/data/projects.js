@@ -222,10 +222,9 @@ export const projects = [
       "Facebook & Telegram integration",
       "Full SaaS rollout with subscriptions"
     ],
-    "image": "/images/projects/growing-instagram.jpg",
+    "image": "/images/projects/instagram_automation.jpg",
           "images": [
-    "/images/projects/growing-instagram.jpg",
-    "/images/projects/growing-instagram.jpg",
+    "/images/projects/instagram_automation.jpg",
         "/images/projects/inventory_9.png",
     "/images/projects/inventory_10.png",
     "/images/projects/inventory_12.png",
@@ -236,8 +235,7 @@ export const projects = [
   ],
     "videoUrl": "/videos/projects/social-automation-demo.mp4",
           "images": [
-    "/images/projects/growing-instagram.jpg",
-    "/images/projects/growing-instagram.jpg",
+    "/images/projects/instagram_automation.jpg",
         "/images/projects/inventory_9.png",
     "/images/projects/inventory_10.png",
     "/images/projects/inventory_12.png",
