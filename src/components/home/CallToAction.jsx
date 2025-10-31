@@ -60,7 +60,7 @@ export default function CallToAction() {
               </Link>
             </Button>
             
-            <Button 
+            {/* <Button 
               size="lg" 
               variant="outline" 
               className="group relative border-2 border-white/60 text-white hover:bg-white hover:text-blue-900 backdrop-blur-sm bg-white/10 transition-all duration-300 hover:scale-105 hover:-translate-y-1 shadow-xl hover:shadow-2xl w-full sm:w-auto min-w-[200px]" 
@@ -79,7 +79,7 @@ export default function CallToAction() {
                 View Credentials
                 <span className="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-all rounded-lg"></span>
               </Link>
-            </Button>
+            </Button> */}
           </div>
 
           {/* Compact, professional trust indicators */}
