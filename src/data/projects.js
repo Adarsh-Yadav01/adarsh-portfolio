@@ -56,7 +56,7 @@ export const projects = [
     "featured": true,
     "liveUrl": "https://finance.marcadeo.in/",
     "githubUrl": "https://github.com/adarshyadav/finance-management-platform",
-    "completedDate": "2024-08-10",
+    "completedDate": "2024-10-10",
   "challenges": [
     "Automated equal task distribution among employees",
     "Real-time tracking of FTD, RD1, RD2 performance",
@@ -117,7 +117,7 @@ export const projects = [
     "featured": true,
     "liveUrl": "https://partners.realfam.co.in/",
     "githubUrl": "https://github.com/adarshyadav/gaming-tracking-platform",
-    "completedDate": "2024-09-20",
+    "completedDate": "2025-06-20",
   "challenges": [
     "Automated equal task distribution among employees",
     "Real-time tracking of FTD, RD1, RD2 performance",
@@ -188,7 +188,7 @@ export const projects = [
     "featured": false,
     "liveUrl": "https://inventory.realfam.co.in/auth/sign-in",
     "githubUrl": "https://github.com/adarshyadav/inventory-management-system",
-    "completedDate": "2024-10-05",
+    "completedDate": "2025-01-11",
   "challenges": [
     "Real-time stock tracking and order status management",
     "Automated daily order assignment to employees",
